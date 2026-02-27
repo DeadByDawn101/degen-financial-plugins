@@ -1,0 +1,8 @@
+{
+  "name": "crypto-analysis",
+  "version": "0.1.0",
+  "description": "Core degen crypto analysis tools: bonding curves, wallet forensics, token DD, rug checks, and on-chain intelligence. Install this first — it wires all data connectors.",
+  "author": {
+    "name": "RavenX AI | DeadByDawn101"
+  }
+}

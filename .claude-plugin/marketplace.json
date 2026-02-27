@@ -1,43 +1,46 @@
 {
-  "name": "financial-services-plugins",
-  "owner": {
-    "name": "Anthropic"
+  "name": "degen-financial-plugins",
+  "description": "Degen crypto plugins for Claude — bonding curves, wallet forensics, meme coin DD, pump.fun launches, and on-chain portfolio tracking. Forked from anthropics/financial-services-plugins.",
+  "author": {
+    "name": "RavenX AI",
+    "github": "DeadByDawn101"
   },
   "plugins": [
     {
-      "name": "financial-analysis",
-      "source": "./financial-analysis",
-      "description": "Core financial modeling and analysis tools: DCF, comps, LBO, 3-statement models, competitive analysis, and deck QC"
+      "name": "crypto-analysis",
+      "path": "crypto-analysis",
+      "type": "core",
+      "description": "Core degen analysis — install first. DexScreener, Helius, Jupiter, pump.fun, Birdeye connectors. Degen DD, bonding curves, wallet forensics, rug checks."
     },
     {
-      "name": "investment-banking",
-      "source": "./investment-banking",
-      "description": "Investment banking productivity tools - client and market insights, deck creation, financial analysis, and transaction management"
+      "name": "meme-coin-research",
+      "path": "meme-coin-research",
+      "type": "addon",
+      "requires": ["crypto-analysis"],
+      "description": "Meme coin launch analysis, CT scoring, and narrative engineering."
     },
     {
-      "name": "equity-research",
-      "source": "./equity-research",
-      "description": "Equity research tools: earnings analysis, initiating coverage reports, and research workflows"
+      "name": "pump-launch",
+      "path": "pump-launch",
+      "type": "addon",
+      "requires": ["crypto-analysis"],
+      "description": "pump.fun launch playbook, bundle strategy, graduation path planning."
     },
     {
-      "name": "private-equity",
-      "source": "./private-equity",
-      "description": "Private equity deal sourcing and workflow tools: company discovery, CRM integration, and founder outreach"
+      "name": "wallet-forensics",
+      "path": "wallet-forensics",
+      "type": "addon",
+      "requires": ["crypto-analysis"],
+      "description": "Deep whale tracking, sniper detection, and fund tracing on Solana."
     },
     {
-      "name": "wealth-management",
-      "source": "./wealth-management",
-      "description": "Wealth management and financial advisory tools: client reviews, financial planning, portfolio analysis, and client reporting"
-    },
-    {
-      "name": "lseg",
-      "source": "./partner-built/lseg",
-      "description": "Price bonds, analyze yield curves, evaluate FX carry trades, value options, and build macro dashboards using LSEG financial data and analytics."
-    },
-    {
-      "name": "sp-global",
-      "source": "./partner-built/spglobal",
-      "description": "S&P Global - Financial data and analytics skills including company tearsheets, earnings previews, and transaction summaries"
+      "name": "defi-portfolio",
+      "path": "defi-portfolio",
+      "type": "addon",
+      "requires": ["crypto-analysis"],
+      "description": "DeFi portfolio PnL tracking and position management."
     }
-  ]
+  ],
+  "upstream": "https://github.com/anthropics/financial-services-plugins",
+  "license": "Apache-2.0"
 }

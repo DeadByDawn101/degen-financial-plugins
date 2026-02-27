@@ -1,0 +1,8 @@
+{
+  "name": "defi-portfolio",
+  "version": "0.1.0",
+  "description": "DeFi portfolio tracking, PnL analysis, position management, and wallet performance across Solana and EVM chains. Add-on — requires crypto-analysis core.",
+  "author": {
+    "name": "RavenX AI | DeadByDawn101"
+  }
+}

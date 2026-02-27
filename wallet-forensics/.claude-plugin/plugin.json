@@ -1,0 +1,8 @@
+{
+  "name": "wallet-forensics",
+  "version": "0.1.0",
+  "description": "Deep wallet investigation, whale tracking, sniper detection, and fund tracing on Solana. Add-on — requires crypto-analysis core.",
+  "author": {
+    "name": "RavenX AI | DeadByDawn101"
+  }
+}

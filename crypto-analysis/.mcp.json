@@ -1,0 +1,39 @@
+{
+  "mcpServers": {
+    "dexscreener": {
+      "type": "http",
+      "url": "https://api.dexscreener.com/latest/dex",
+      "note": "Token pairs, price, volume, liquidity — no API key required"
+    },
+    "helius": {
+      "type": "http",
+      "url": "https://mainnet.helius-rpc.com",
+      "note": "Solana RPC — set HELIUS_API_KEY in env"
+    },
+    "jupiter": {
+      "type": "http",
+      "url": "https://quote-api.jup.ag/v6",
+      "note": "Solana DEX aggregator — swap quotes, routes, price impact"
+    },
+    "pumpfun": {
+      "type": "http",
+      "url": "https://client-api-2-74b1891ee9f9.herokuapp.com",
+      "note": "pump.fun token data, bonding curve state, king of the hill"
+    },
+    "birdeye": {
+      "type": "http",
+      "url": "https://public-api.birdeye.so",
+      "note": "Solana/EVM token analytics — set BIRDEYE_API_KEY in env"
+    },
+    "solscan": {
+      "type": "http",
+      "url": "https://pro-api.solscan.io/v2.0",
+      "note": "Solana explorer API — transactions, accounts, tokens — set SOLSCAN_API_KEY"
+    },
+    "defined": {
+      "type": "http",
+      "url": "https://graph.defined.fi/graphql",
+      "note": "Multi-chain token analytics — set DEFINED_API_KEY in env"
+    }
+  }
+}
